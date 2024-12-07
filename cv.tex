@@ -1,0 +1,134 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+% Custom colors
+\definecolor{HeaderBlue}{RGB}{0, 51, 102}
+\definecolor{LinkBlue}{RGB}{0, 102, 204}
+
+% Formatting
+\titleformat{\section}{\Large\bfseries\color{HeaderBlue}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+\titlespacing{\section}{0pt}{16pt}{8pt}
+\titlespacing{\subsection}{0pt}{10pt}{4pt}
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=LinkBlue,
+    filecolor=LinkBlue,
+    urlcolor=LinkBlue,
+}
+
+% Header/Footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{\footnotesize I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process in accordance with the Personal Data Protection Act of 10 May 2018 and in compliance with the GDPR regulation of 27 April 2016.}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge\textbf{Sebastian Sadowy}} \\[0.3cm]
+    \begin{tabular}{c c c}
+        \href{mailto:sebastian.sadowy@proton.me}{sebastian.sadowy@proton.me} & 
+        \textbf{·} & 
+        +48 504 602 420 \\
+        \href{https://github.com/zdsdd}{github.com/zdsdd} &
+        \textbf{·} &
+        Łódź/Remote
+    \end{tabular}
+\end{center}
+
+% About Me
+\section{About Me}
+A computer science graduate student with a strong foundation in software development and a passion for solving complex technical challenges. Experienced in both backend and frontend development. Committed to writing clean, maintainable code and staying current with industry best practices and emerging technologies.
+
+% Skills
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.5cm, itemsep=4pt]
+    \item \textbf{Backend Development:} .NET, C\#, Go, Python, Java, C/C++
+    \item \textbf{IDEs \& Tools:} Visual Studio, Visual Studio Code, JetBrains Rider
+    \item \textbf{Database \& Messaging:} PostgreSQL, Redis, RabbitMQ
+    \item \textbf{API \& Authentication:} REST, JWT, OAuth2
+    \item \textbf{Frontend Development:} React, TypeScript, JavaScript, HTML/CSS, Tailwind
+    \item \textbf{DevOps \& Tools:} Docker, Kubernetes, Git, GitHub Actions, Bash, WSL
+    \item \textbf{Cloud:} AWS
+    \item \textbf{Software Practices:} Test-Driven Development, SOLID Principles, Design Patterns, Clean Code
+    \item \textbf{Languages:} Polish (Native), English (B2)
+\end{itemize}
+
+% Experience
+\section{Professional Experience}
+
+\subsection{Software Developer Intern | Transition Technologies PSC}
+\textit{July 2024 - August 2024}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Led AI model training pipeline development and data preparation processes
+    \item Implemented integration with external services for model deployment
+    \item Technologies: Python, React
+\end{itemize}
+
+\subsection{Game Developer Intern | Cleversan Games}
+\textit{April 2024 - May 2024}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Developed and optimized game mechanics following technical specifications
+    \item Conducted performance profiling and implemented optimization solutions
+    \item Technologies: Unity, C\#
+\end{itemize}
+
+% Projects
+\section{Personal Projects}
+
+\subsection{Handmade Bookmarks E-commerce Platform}
+\textit{Go, React, TypeScript} | \href{https://github.com/ZDSDD/zakladki}{Backend} · \href{https://github.com/ZDSDD/zakladki-front}{Frontend}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Building a full-stack e-commerce platform for artisanal bookmarks
+    \item Implementing secure user authentication and product management features
+    \item Utilizing modern web development practices and responsive design principles
+\end{itemize}
+
+\subsection{IoT Device Management System}
+\textit{.NET, Azure} | \href{https://github.com/ZDSDD/IoT_OpcAgent}{GitHub}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Developed an Azure-based IoT device management and monitoring solution
+    \item Implemented remote device control and data collection capabilities
+    \item Created comprehensive technical documentation and maintained code quality standards
+\end{itemize}
+
+% Education
+\section{Education}
+
+\subsection{Master of Science in Computer Science}
+\textit{University of Łódź} | October 2024 - Present
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Specialization: General Computer Science
+    \item Focus on advanced algorithms, distributed systems, and software architecture
+\end{itemize}
+
+\subsection{Bachelor of Science in Computer Science}
+\textit{University of Łódź} | October 2021 - June 2024
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Specialization: Graphics and Game Design
+    \item Graduated with Distinction (Very Good)
+    \item Received Rector's Scholarship for Academic Excellence (2022, 2023)
+\end{itemize}
+
+% Interests
+\section{Professional Interests}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Backend Development: Distributed Systems, Microservices Architecture
+    \item Software Engineering: Design Patterns, System Architecture
+    \item Emerging Technologies: Cloud Computing, DevOps Practices
+    \item Game Development: Engine Architecture, Performance Optimization
+\end{itemize}
+
+\end{document}
