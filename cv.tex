@@ -6,6 +6,7 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{tabularx}
 
 % Custom colors
 \definecolor{HeaderBlue}{RGB}{0, 51, 102}
@@ -45,32 +46,47 @@
         +48 504 602 420 \\
         \href{https://github.com/zdsdd}{github.com/zdsdd} &
         \textbf{·} &
-        Łódź/Remote
-    \end{tabular}
+        \href{https://www.linkedin.com/in/sebastiansadowy}{linkedin.com/in/sebastiansadowy}
+    \end{tabular} \\
+    Łódź/Remote
+
 \end{center}
 
 
 % About Me
 \section{About Me}
-I’m a software developer who loves building things that work efficiently and make an impact. I specialize in backend development with Golang and .NET, but I also enjoy working on full-stack projects. I like solving technical problems and continuously learning new technologies. Whether it’s optimizing a system, experimenting with new tools, or tackling a tough bug, I’m always up for a challenge.
+I'm a software developer focused on building reliable and efficient systems.
 
-% Skills
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.5cm, itemsep=4pt]
-    \item \textbf{Backend Development:} .NET, C\#, Go, Python, Java, C/C++
-    \item \textbf{Frontend Technologies:} React, TypeScript, JavaScript, HTML/CSS, Tailwind
-    \item \textbf{Database \& Messaging:} PostgreSQL, Redis, RabbitMQ
-    \item \textbf{IDEs \& Development Tools:} Visual Studio, Visual Studio Code, JetBrains Rider, Git
-    \item \textbf{API Development:} REST, gRPC, JWT, OAuth2,
-    \item \textbf{Cloud \& DevOps:} AWS, Docker, Kubernetes, GitHub Actions, CI/CD, Terraform
-    \item \textbf{Software Engineering Practices:} Test-Driven Development, SOLID Principles, Microservices, Design Patterns, Clean Code, Scrum
-    \item \textbf{Languages:} Fluent in Polish, Proficient in English (B2)
+\begin{itemize}[leftmargin=0.5cm, itemsep=6pt, label=\textbullet]
+    \item \textbf{Programming Languages:} C\#, Go, Python, Java, C/C++, TypeScript, JavaScript
+    \item \textbf{Frameworks \& Libraries:} .NET, React, Tailwind, gRPC
+    \item \textbf{Cloud Services:} AWS (S3, Lambda, EC2, RDS, SQS), Azure (Functions, Service Bus)
+    \item \textbf{Messaging:} RabbitMQ, Azure Service Bus, AWS SQS
+    \item \textbf{Databases:} PostgreSQL, Cosmos DB, Redis
+    \item \textbf{DevOps \& Infrastructure:} Docker, Kubernetes, Terraform, GitHub Actions, CI/CD
+    \item \textbf{API Development:} REST, OpenAPI, Swagger, JWT, OAuth2
+    \item \textbf{Development Tools:} Visual Studio, VS Code, JetBrains Rider, Postman, Insomnia
+    \item \textbf{Version Control:} Git, GitHub, GitLab, Gitea
+    \item \textbf{Documentation:} UML, Docusaurus
+    \item \textbf{Software Engineering:} TDD, SOLID, Clean Code, Microservices, Event-Driven Architecture, Design Patterns, Scrum
+    \item \textbf{Languages:} Polish (native), English (B2)
 \end{itemize}
+
 % Experience
 \section{Professional Experience}
 
+\subsection{DevOps Intern | Transition Technologies PSC}
+\textit{March 2025--May 2025}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Worked on automating infrastructure provisioning using \textbf{Terraform} in Microsoft Azure
+    \item Leveraged \textbf{Azure AI Foundry} solutions and AI agents for automation and optimization of internal processes
+    \item Participated in IaC pipeline development, function app deployments, and GitHub Actions CI/CD flows
+    \item Technologies: Azure, Terraform, Azure OpenAI, GitHub Actions, Azure Functions
+\end{itemize}
+
 \subsection{Software Developer Intern | Transition Technologies PSC}
-\textit{July 2024 - August 2024}
+\textit{July 2024--August 2024}
 \begin{itemize}[leftmargin=0.5cm, nosep]
     \item Led AI model training pipeline development and data preparation processes
     \item Implemented integration with external services for model deployment
@@ -78,7 +94,7 @@ I’m a software developer who loves building things that work efficiently and m
 \end{itemize}
 
 \subsection{Game Developer Intern | Cleversan Games}
-\textit{April 2024 - May 2024}
+\textit{April 2024--May 2024}
 \begin{itemize}[leftmargin=0.5cm, nosep]
     \item Developed and optimized game mechanics following technical specifications
     \item Conducted performance profiling and implemented optimization solutions
@@ -87,6 +103,15 @@ I’m a software developer who loves building things that work efficiently and m
 
 % Projects
 \section{Personal Projects}
+
+\subsection{Conference Management Application (Team Project)}
+\textit{JavaScript (Vue, Express.js), Docker, PostgreSQL} | \href{https://github.com/your-github-link}{GitHub}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Developed a conference management platform with features like event browsing, bookmarking, and an admin panel for event management
+    \item Worked on both frontend and backend, using \textbf{Vue.js} for the user interface and \textbf{Express.js} for backend APIs
+    \item Containerized the application with \textbf{Docker} for consistent development environments and used \textbf{PostgreSQL} for data storage
+    \item Implemented user authentication, event categorization, and calendar features with real-time updates
+\end{itemize}
 
 \subsection{Handmade Bookmarks E-commerce Platform}
 \textit{Go, React, TypeScript, PostgreSQL, AWS S3, AWS Amplify, Docker} | \href{https://github.com/ZDSDD/zakladki}{Backend} · \href{https://github.com/ZDSDD/zakladki-front}{Frontend}
@@ -98,13 +123,13 @@ I’m a software developer who loves building things that work efficiently and m
     \item Focused on seamless user authentication, smooth product browsing, and a clean, modern UI
 \end{itemize}
 
-
 \subsection{IoT Device Management System}
 \textit{.NET, C\#, Azure} | \href{https://github.com/ZDSDD/IoT_OpcAgent}{GitHub}
-\begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Developed an Azure-based IoT device management and monitoring solution using Function App, Storage Account, Service Bus, IoT Hub, Stream Analytics Job, and Communication Service
-    \item Implemented remote device control and data collection capabilities
-    \item Created comprehensive technical documentation and maintained code quality standards
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=4pt, nosep]
+    \item Developed an IoT device management solution leveraging \textbf{Azure} services such as \textbf{Function App}, \textbf{Storage Account}, \textbf{Service Bus}, \textbf{IoT Hub}, \textbf{Stream Analytics Job}, and \textbf{Communication Service}
+    \item Enabled remote device control and real-time data collection, improving system monitoring capabilities
+    \item Wrote detailed technical documentation and followed best practices to ensure high code quality and maintainability
 \end{itemize}
 
 
@@ -115,24 +140,23 @@ I’m a software developer who loves building things that work efficiently and m
 \textit{University of Łódź} | October 2024 - Present
 \begin{itemize}[leftmargin=0.5cm, nosep]
     \item Specialization: General Computer Science
-    \item Focus on advanced algorithms, distributed systems, and software architecture
+    \item Received Rector's Scholarship for Academic Excellence (2024)
 \end{itemize}
 
 \subsection{Bachelor of Science in Computer Science}
 \textit{University of Łódź} | October 2021 - June 2024
 \begin{itemize}[leftmargin=0.5cm, nosep]
     \item Specialization: Graphics and Game Design
-    \item Graduated with Distinction (Very Good)
+    \item Graduated with a \textbf{Very Good} grade (Overall average: \textbf{4.77})
     \item Received Rector's Scholarship for Academic Excellence (2022, 2023)
 \end{itemize}
 
 % Interests
-\section{Professional Interests}
+\section{Interests}
 \begin{itemize}[leftmargin=0.5cm, nosep]
     \item Distributed Systems, Microservices Architecture
-    \item Design Patterns, System Architecture
-    \item Cloud Computing, DevOps Practices
-    \item Game Development, Performance Optimization
+    \item Going to the cinema, playing video games, and reading books (not always in that order)
 \end{itemize}
+
 
 \end{document}
