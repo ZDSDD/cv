@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{tabularx}
+\usepackage{fancyhdr}
 
 % Custom colors
 \definecolor{HeaderBlue}{RGB}{0, 51, 102}
@@ -27,7 +28,6 @@
 }
 
 % Header/Footer
-\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
@@ -49,114 +49,94 @@
         \href{https://www.linkedin.com/in/sebastiansadowy}{linkedin.com/in/sebastiansadowy}
     \end{tabular} \\
     Łódź/Remote
-
 \end{center}
-
 
 % About Me
 \section{About Me}
-I'm a software developer focused on building reliable and efficient systems.
+I'm a software developer who enjoys building reliable systems and solving complex problems. I specialize in backend development, cloud solutions, and DevOps practices.
 
+% Technical Skills
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.5cm, itemsep=6pt, label=\textbullet]
     \item \textbf{Programming Languages:} C\#, Go, Python, Java, C/C++, TypeScript, JavaScript
     \item \textbf{Frameworks \& Libraries:} .NET, React, Tailwind, gRPC
-    \item \textbf{Cloud Services:} AWS (S3, Lambda, EC2, RDS, SQS), Azure (Functions, Service Bus)
-    \item \textbf{Messaging:} RabbitMQ, Azure Service Bus, AWS SQS
+    \item \textbf{Cloud Platforms:} AWS (S3, Lambda, EC2, RDS, SQS), Azure (Functions, Service Bus)
+    \item \textbf{Messaging Systems:} RabbitMQ, Azure Service Bus, AWS SQS
     \item \textbf{Databases:} PostgreSQL, Cosmos DB, Redis
-    \item \textbf{DevOps \& Infrastructure:} Docker, Kubernetes, Terraform, GitHub Actions, CI/CD
-    \item \textbf{API Development:} REST, OpenAPI, Swagger, JWT, OAuth2
-    \item \textbf{Development Tools:} Visual Studio, VS Code, JetBrains Rider, Postman, Insomnia
-    \item \textbf{Version Control:} Git, GitHub, GitLab, Gitea
+    \item \textbf{DevOps \& CI/CD:} Docker, Kubernetes, Terraform, GitHub Actions
+    \item \textbf{API Development:} REST, OpenAPI, JWT, OAuth2
+    \item \textbf{Tools:} Visual Studio, VS Code, JetBrains Rider, Postman
+    \item \textbf{Version Control:} Git, GitHub, GitLab
     \item \textbf{Documentation:} UML, Docusaurus
-    \item \textbf{Software Engineering:} TDD, SOLID, Clean Code, Microservices, Event-Driven Architecture, Design Patterns, Scrum
+    \item \textbf{Software Engineering:} TDD, SOLID, Microservices, Event-Driven Architecture
     \item \textbf{Languages:} Polish (native), English (B2)
 \end{itemize}
 
-% Experience
+% Professional Experience
 \section{Professional Experience}
 
 \subsection{DevOps Intern | Transition Technologies PSC}
-\textit{March 2025--May 2025}
+\textit{March 2025--Present}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Worked on automating infrastructure provisioning using \textbf{Terraform} in Microsoft Azure
-    \item Leveraged \textbf{Azure AI Foundry} solutions and AI agents for automation and optimization of internal processes
-    \item Participated in IaC pipeline development, function app deployments, and GitHub Actions CI/CD flows
-    \item Technologies: Azure, Terraform, Azure OpenAI, GitHub Actions, Azure Functions
+    \item Automated infrastructure provisioning using \textbf{Terraform} in Microsoft Azure.
+    \item Utilized \textbf{Azure AI Foundry} for process optimization and automation.
+    \item Developed IaC pipelines and integrated CI/CD flows using \textbf{GitHub Actions}.
 \end{itemize}
 
 \subsection{Software Developer Intern | Transition Technologies PSC}
 \textit{July 2024--August 2024}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Led AI model training pipeline development and data preparation processes
-    \item Implemented integration with external services for model deployment
-    \item Technologies: Python, React
+    \item Designed and optimized AI model training pipelines.
+    \item Integrated external services for seamless model deployment.
 \end{itemize}
 
 \subsection{Game Developer Intern | Cleversan Games}
 \textit{April 2024--May 2024}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Developed and optimized game mechanics following technical specifications
-    \item Conducted performance profiling and implemented optimization solutions
-    \item Technologies: Unity, C\#
+    \item Developed game mechanics and optimized performance.
+    \item Conducted profiling and implemented performance improvements.
 \end{itemize}
 
-% Projects
+% Personal Projects
 \section{Personal Projects}
 
-\subsection{Conference Management Application (Team Project)}
-\textit{JavaScript (Vue, Express.js), Docker, PostgreSQL} | \href{https://github.com/your-github-link}{GitHub}
+\subsection{Conference Management Application}
+\textit{JavaScript (Vue, Express.js), Docker, PostgreSQL}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Developed a conference management platform with features like event browsing, bookmarking, and an admin panel for event management
-    \item Worked on both frontend and backend, using \textbf{Vue.js} for the user interface and \textbf{Express.js} for backend APIs
-    \item Containerized the application with \textbf{Docker} for consistent development environments and used \textbf{PostgreSQL} for data storage
-    \item Implemented user authentication, event categorization, and calendar features with real-time updates
+    \item Full-stack application for managing conferences with real-time updates.
+    \item Developed authentication and event categorization features.
 \end{itemize}
 
 \subsection{Handmade Bookmarks E-commerce Platform}
-\textit{Go, React, TypeScript, PostgreSQL, AWS S3, AWS Amplify, Docker} | \href{https://github.com/ZDSDD/zakladki}{Backend} · \href{https://github.com/ZDSDD/zakladki-front}{Frontend}
+\textit{Go, React, AWS, Docker}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Building a full-stack e-commerce platform to bring unique, handcrafted bookmarks online
-    \item Designed a \textbf{Golang} backend with \textbf{PostgreSQL} for reliable data storage and \textbf{S3} for secure image hosting
-    \item Deployed the frontend on \textbf{AWS Amplify}, ensuring a smooth and scalable user experience
-    \item Containerized the application with \textbf{Docker} to streamline development and deployment
-    \item Focused on seamless user authentication, smooth product browsing, and a clean, modern UI
+    \item Full-stack e-commerce platform for selling handmade bookmarks.
+    \item Designed a scalable backend with authentication and image hosting.
 \end{itemize}
-
-\subsection{IoT Device Management System}
-\textit{.NET, C\#, Azure} | \href{https://github.com/ZDSDD/IoT_OpcAgent}{GitHub}
-
-\begin{itemize}[leftmargin=0.5cm, itemsep=4pt, nosep]
-    \item Developed an IoT device management solution leveraging \textbf{Azure} services such as \textbf{Function App}, \textbf{Storage Account}, \textbf{Service Bus}, \textbf{IoT Hub}, \textbf{Stream Analytics Job}, and \textbf{Communication Service}
-    \item Enabled remote device control and real-time data collection, improving system monitoring capabilities
-    \item Wrote detailed technical documentation and followed best practices to ensure high code quality and maintainability
-\end{itemize}
-
 
 % Education
 \section{Education}
 
-\subsection{Master of Science in Computer Science}
-\textit{University of Łódź} | October 2024 - Present
+\subsection{Master of Science in Computer Science | University of Łódź}
+\textit{Faculty of Mathematics and Computer Science \hfill October 2024\,--\, Present}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Specialization: General Computer Science
-    \item Received Rector's Scholarship for Academic Excellence (2024)
+  \item Specialization: General Computer Science
+  \item Awarded the Rector's Scholarship for Academic Excellence (2024)
 \end{itemize}
 
-\subsection{Bachelor of Science in Computer Science}
-\textit{University of Łódź} | October 2021 - June 2024
+\subsection{Bachelor of Science in Computer Science | University of Łódź}
+\textit{Faculty of Mathematics and Computer Science \hfill October 2021\,--\,June 2024}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Specialization: Graphics and Game Design
-    \item Graduated with a \textbf{Very Good} grade (Overall average: \textbf{4.77})
-    \item Received Rector's Scholarship for Academic Excellence (2022, 2023)
+  \item Specialization: Graphics and Game Design
+  \item Graduated with \textbf{Very Good} grade (Overall average: \textbf{4.77})
+  \item Awarded the Rector's Scholarship for Academic Excellence (2022, 2023)
 \end{itemize}
 
 % Interests
 \section{Interests}
 \begin{itemize}[leftmargin=0.5cm, nosep]
-    \item Distributed Systems, Microservices Architecture
-    \item Going to the cinema, playing video games, and reading books (not always in that order)
+    \item Distributed Systems, Cloud Computing, Microservices
+    \item Cinema, video games, literature
 \end{itemize}
-
 
 \end{document}
