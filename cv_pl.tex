@@ -1,0 +1,150 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+
+% Kolory
+\definecolor{HeaderBlue}{RGB}{0, 51, 102}
+\definecolor{LinkBlue}{RGB}{0, 102, 204}
+
+\usepackage{fontspec}
+\setmainfont{Roboto}
+\setsansfont{Montserrat}
+
+% Formatowanie nagłówków
+\titleformat{\section}{\Large\bfseries\color{HeaderBlue}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+\titlespacing{\section}{0pt}{16pt}{8pt}
+\titlespacing{\subsection}{0pt}{10pt}{4pt}
+
+% Linki
+\hypersetup{
+    colorlinks=true,
+    linkcolor=LinkBlue,
+    filecolor=LinkBlue,
+    urlcolor=LinkBlue,
+}
+
+% Stopka
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[C]{\footnotesize Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej aplikacji na potrzeby procesu rekrutacji, zgodnie z ustawą z dnia 10 maja 2018 r. o ochronie danych osobowych oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+% Nagłówek
+\begin{center}
+    {\Huge\textbf{Sebastian Sadowy}} \\[0.3cm]
+    \href{https://sebastiansadowy.com}{sebastiansadowy.com} \\[0.2cm]
+    \begin{tabular}{c c c}
+        \href{mailto:sebastian.sadowy@proton.me}{sebastian.sadowy@proton.me} &
+        \textbf{·} &
+        +48 504 602 420 \\
+        \href{https://github.com/zdsdd}{github.com/zdsdd} &
+        \textbf{·} &
+        \href{https://www.linkedin.com/in/sebastiansadowy}{linkedin.com/in/sebastiansadowy}
+    \end{tabular} \\
+    Łódź / Zdalnie
+\end{center}
+
+% O mnie
+\section{O mnie}
+
+Interesuję się zastosowaniem sztucznej inteligencji w automatyzacji procesów oraz budowaniem rozwiązań opartych o chmurę i praktyki DevOps. Cenię prostotę w projektowaniu systemów i jasną komunikację w zespole, choć równie dobrze odnajduję się w samodzielnej pracy.
+
+% Doświadczenie zawodowe
+\section{Doświadczenie zawodowe}
+
+\subsection{Stażysta ds. Azure i GenAI | Transition Technologies PSC}
+\textit{Marzec 2025--obecnie}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Wykorzystywanie \textbf{Azure AI Foundry}, \textbf{Python} i \textbf{TypeScript} do tworzenia rozwiązań opartych na sztucznej inteligencji.
+    \item Tworzenie infrastruktury jako kod (IaC) oraz integracja procesów CI/CD przy użyciu \textbf{GitHub Actions}.
+    \item Zarządzanie infrastrukturą w GitHub i Azure z wykorzystaniem \textbf{Terraform}.
+\end{itemize}
+
+\subsection{Stażysta – Programista | Transition Technologies PSC}
+\textit{Lipiec 2024--Sierpień 2024}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Projektowanie potoków trenowania modeli AI przy użyciu \textbf{TensorFlow}.
+    \item Tworzenie interfejsu użytkownika w \textbf{React} oraz backendu w \textbf{Flask}.
+\end{itemize}
+
+\subsection{Stażysta – Twórca Gier | Cleversan Games}
+\textit{Kwiecień 2024--Maj 2024}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Programowanie mechanik gry oraz optymalizacja wydajności w \textbf{C\#} i \textbf{Unity}.
+    \item Profilowanie kodu i implementacja optymalizacji w silniku Unity.
+\end{itemize}
+
+% Umiejętności techniczne
+\section{Umiejętności techniczne}
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=6pt, label=\textbullet]
+    \item \textbf{Języki programowania:} C\#, Go, Python, Java, C/C++, TypeScript, JavaScript, Bash
+    \item \textbf{Frameworki i biblioteki:} .NET, React, Vue, Node.js, Tailwind, gRPC, Flask, TensorFlow, Spring
+    \item \textbf{Chmura:} AWS (S3, Lambda, EC2, RDS, Amplify, ECS, ECR), Azure (Functions, IoT Hub)
+    \item \textbf{Systemy kolejkowe:} RabbitMQ, AWS SQS, Azure Service Bus
+    \item \textbf{Bazy danych:} PostgreSQL, Cosmos DB, Redis
+    \item \textbf{DevOps i CI/CD:} Docker, Kubernetes, Terraform, GitHub Actions
+    \item \textbf{Tworzenie API:} REST, OpenAPI, Swagger
+    \item \textbf{Narzędzia:} Visual Studio, VS Code, JetBrains, Postman, WSL
+    \item \textbf{Kontrola wersji:} Git, GitHub, GitLab
+    \item \textbf{Dokumentacja:} UML, Docusaurus
+    \item \textbf{Inżynieria oprogramowania:} TDD, SOLID, mikroserwisy, Event-Driven Architecture
+    \item \textbf{Języki:} polski (ojczysty), angielski (B2)
+\end{itemize}
+
+% Projekty własne
+\section{Projekty własne}
+
+\subsection{Aplikacja do zarządzania konferencjami}
+\textit{JavaScript (Vue, Express.js), Docker, PostgreSQL}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Aplikacja full-stack do zarządzania konferencjami z aktualizacjami w czasie rzeczywistym.
+    \item Implementacja uwierzytelniania i kategorii wydarzeń.
+\end{itemize}
+
+\subsection{Platforma e-commerce do sprzedaży zakładek}
+\textit{Go, React, AWS, Docker}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Skalowalna platforma full-stack do sprzedaży rękodzieła.
+    \item Backend z obsługą uwierzytelniania i hostingu obrazów.
+\end{itemize}
+
+% Edukacja
+\section{Edukacja}
+
+\subsection{Magister Informatyki | Uniwersytet Łódzki}
+\textit{Wydział Matematyki i Informatyki \hfill Październik 2024--obecnie}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+  \item Specjalizacja: Informatyka ogólna
+  \item Stypendium Rektora za wyniki w nauce (2024)
+\end{itemize}
+
+\subsection{Licencjat z Informatyki | Uniwersytet Łódzki}
+\textit{Wydział Matematyki i Informatyki \hfill Październik 2021--Czerwiec 2024}
+\begin{itemize}[leftmargin=0.5cm, nosep]
+  \item Specjalizacja: Grafika i projektowanie gier
+  \item Ocena końcowa: \textbf{bardzo dobra} (średnia: \textbf{4,77})
+  \item Stypendium Rektora za wyniki w nauce (2022, 2023)
+\end{itemize}
+
+% Zainteresowania
+\section{Zainteresowania}
+
+\begin{itemize}[leftmargin=0.5cm, nosep]
+    \item Systemy rozproszone, przetwarzanie w chmurze, mikroserwisy
+    \item Kino, gry komputerowe, literatura
+\end{itemize}
+
+\end{document}
